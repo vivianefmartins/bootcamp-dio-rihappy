@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form name="signup" onsubmit="alert('Enviei o formulário');" autocomplete="off" target="_blank" method="post" action="#">
+        Nome: <input type="text" name="name"> <br>
+        Idade: <input type="number" name="age"> <br>
+        Senha: <input type="password" name="password"> <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
+<!--
+ATRIBUTOS
+
+-name - da nome ao formulário.
+-onsubmit - cria um alerta de confirmação de envio do formulário.
+-autocomplete (on/off) - para autocompletar o formulário; ou para ñ autocompletar o formulário.
+-target="_blank" - para quando clicar em enviar, abrir o formulário em outra página.
+-method="post" - envia os dados so formulário ao servidor pelo HTTP POST, ou seja, de forma criptografada. Enquanto o metodo GET envia pela URL. O metodo POST é mais seguro.
+-action - para colocar o endereço para onde os dados coletados serão armazenados.
+-->

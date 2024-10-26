@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select box, textarea</title>
+</head>
+<body>
+    <form onsubmit="" method="get">
+        <label>Nome: </label><input type="text" name="name"><br>
+        <label>Cargo: </label>
+        <select name="role">
+            <option value="">Selecione o cargo</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select>
+        <br>
+        <label>Assunto: </label><input type="text" name="subject"><br>
+        <label>Mensagem:</label>
+        <textarea rows="10" cols="20" name="menssage"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
+<!--
+* onsubmit - recurso do JavaScript que serve para validar o formulário
+* multiple - para selecionar várias opções segurando o CTRL
+-->
