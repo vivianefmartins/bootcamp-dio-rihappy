@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributo</title>
+    <style>
+        [title] {
+            color: red;
+        }
+
+        [title="Netflix"] {
+            color: blue;
+        }
+
+        [title="Spotify"] {
+            color: green;
+        }
+
+        [title~="Streaming"] {
+            background: yellow;
+        }
+
+        [title|="Streaming"] {
+            background: lightblue;
+        }
+
+        [href^="http://"] {
+            background: lightgreen;
+            /*
+            Quando for para o atributo buscar o prefixo do valor usa-se href^= , quando quiser que busque o sufixo usa-se href$=
+            */
+        }
+
+        [href$="login"] {
+            background: pink;
+        }
+
+        [href*="loginn"] {
+            background: rgb(191, 196, 232);
+            /*
+            Também funciona no atributo title
+            */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a title="Streaming Netflix" href="https://www.netflix.com">Netflix</a>
+            </li>
+            <li>
+                <a title="Streaming Prime" href="https://www.primevideo.com/">Prime Vídeo</a>
+            </li>
+            <li>
+                <a title="Spotify" href="https://www.spotify.com/">Spotify</a>
+            </li>
+            <li>
+                <a title="Streaming-disney">
+                    Disney Plus
+                </a>
+            </li>
+            <li>
+                <a title="max" href="http://www.max.com">Max</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/login">Youtube</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.loginn.music.com">Amazon Music</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
