@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.exemplo {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 30px solid;
+    margin: 50px auto;
+}
+
+#exemplo-resumido {
+    border-image: url('../imagens/frame-01.png') 169 / 10px 20px / 1 2 round;
+}
+
+#exemplo-1 {
+    border-image-source: url('../imagens/frame-01.png');
+    border-image-repeat: round;
+    border-image-slice: 169;
+    border-image-outset: 30px; /*coloca a borda na parte de fora do objeto*/
+    border-image-width: 10px 20px;
+}
+
+#exemplo-2 {
+    border-image-source: linear-gradient(red, blue);
+    border-image-slice: 10;
+}
